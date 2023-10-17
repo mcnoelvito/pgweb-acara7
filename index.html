@@ -41,11 +41,13 @@ ement.prototype.classList,URL"></script>
         document.getElementById('zoom-out').onclick = function () {
             var view = map.getView();
             var zoom = view.getZoom();
+            console.log("Debug zoom out: " + zoom)
             view.setZoom(zoom - 1);
         };
         document.getElementById('zoom-in').onclick = function () {
             var view = map.getView();
             var zoom = view.getZoom();
+            console.log("Debug zoom in: " + zoom)
             view.setZoom(zoom + 1);
         };
     </script>
